@@ -69,7 +69,7 @@ class ProductResource extends Resource
                         TextInput::make('price')
                         ->numeric()
                         ->required()
-                        ->prefix('INR')
+                        ->prefix('Dt')
                     ]),
 
                     Section::make('Associations')->schema([

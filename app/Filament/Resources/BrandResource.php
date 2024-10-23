@@ -47,6 +47,7 @@ class BrandResource extends Resource
                             ->required()
                             ->dehydrated()
                             ->unique(Brand::class, 'slug', ignoreRecord: true)
+                
                         ]),
                     FileUpload::make('image')
                     ->image()
