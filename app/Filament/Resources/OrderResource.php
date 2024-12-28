@@ -259,7 +259,7 @@ class OrderResource extends Resource
 
     public static function getNavigationBadge(): ?string
     {
-        return static::getModel()::count();
+        return static::getModel()::count(); //tzid nbr orders
     }
 
     public static function getNavigationBadgeColor(): string|array|null
